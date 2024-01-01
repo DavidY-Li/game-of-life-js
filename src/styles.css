@@ -71,6 +71,17 @@ body {
   width: 34px;
 }
 
+.button {
+  background-color: #ff0000;
+  border: none;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
 .board-row:after {
   clear: both;
   content: '';
