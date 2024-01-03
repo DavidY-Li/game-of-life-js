@@ -118,9 +118,30 @@ export default function Game() {
 
   return (
     <>
-      <button onClick={updateBoard}>{"Next generation"}</button>
-      <button onClick={toggleGame}>{playing ? "Pause" : "Play"}</button>
-      <button onClick={clearBoard}>{"Clear"}</button>
+      <div style={{ height: "55px" }}>
+        <p
+          style={{
+            color: "red",
+            fontSize: "30px",
+            fontFamily: "Comic Sans MS",
+          }}
+        >
+          Conway's Game of Life
+        </p>
+      </div>
+      <div style={{ height: "75px" }}>
+        <button className="button" onClick={updateBoard}>
+          {"Next generation"}
+        </button>
+        <button className="button" onClick={toggleGame}>
+          {playing ? "Pause" : "Play"}
+        </button>
+        <button className="button" onClick={clearBoard}>
+          {"Clear"}
+        </button>
+        <>RGB mode</>
+        <input type="checkbox" id="myCheck" onclick="myFunction()"></input>
+      </div>
       <div>
         <Board
           currentBoard={currentBoard}
